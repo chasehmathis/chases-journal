@@ -51,6 +51,13 @@ For every submission in the target month, the three reviewers each give:
 note; re-run each computational note. If a proof is wrong or the code doesn't
 reproduce, say exactly where.
 
+**Hold the line on substance and breadth.** This is a theory-led journal: a note
+must have a genuine mathematical or conceptual core, not merely report simulation
+numbers. Reward notes that tie theory to simulation. A note that is only an
+experiment with no idea behind it should not win. Also favor breadth over time —
+if recent issues have orbited the same few topics, give weight to a strong note
+that opens new ground.
+
 ## 3. Decide
 
 The editor-in-chief:
@@ -83,6 +90,10 @@ published/YYYY-MM-<slug>/
 note was selected. Update the winning submission's `meta.json` `status` to
 `"published"`; set others to `"rejected"` or `"revise-and-resubmit"` as
 appropriate.
+
+Rebuild the PDF for the published copy so it's current:
+`bash scripts/build_pdf.sh published/YYYY-MM-<slug>` (ensure `note.pdf` exists in
+the published folder before committing).
 
 ## 6. Log it
 

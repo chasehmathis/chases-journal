@@ -9,29 +9,32 @@ default loop runs unattended.
 
 ## Scope
 
-Original short research notes in **modern statistical inference**:
+Original short research notes in **modern statistical methodology and inference,
+broadly construed**. Authors range widely and write about whatever is genuinely
+interesting to the field — the journal is meant to feel like an open field, not an
+echo chamber, and topics are **not** tailored to any individual's research agenda.
+
+Recurring interests (examples and a launch pad, not a fence):
 
 - e-values, e-processes, test (super)martingales
 - sequential / anytime-valid inference, confidence sequences
 - defensive forecasting, calibration, game-theoretic probability
-- conformal prediction
-- causal inference
-- multi-armed bandits and adaptive experimentation
+- conformal prediction · causal inference · bandits & adaptive experimentation
+- and adjacent areas: high-dimensional statistics, nonparametrics, experimental
+  design, statistical learning theory, robust/Bayesian methods, …
 
-A submission is a **short note** (think 2–4 pages of substance), not a full paper.
-It must make one *clear, self-contained contribution*. Notes come in three kinds —
-all equally welcome:
+A submission is a **short note** (think 2–4 pages of substance), not a full paper,
+and it must have a **genuine mathematical or conceptual core**. This is a
+**theory-led** journal:
 
-- **Theoretical** — a new bound, a clean counterexample, a unifying reframing, a
-  small theorem with proof, or a sharp conjecture backed by argument.
-- **Computational / simulation** — a crisp empirical question answered carefully
-  with **runnable code, reported results, and figures** (e.g. does method A keep
-  its coverage under model misspecification? how tight is a bound empirically?).
-- **Mixed** — a modest result together with simulations that probe or illustrate
-  it.
+- **Theory + simulation** *(preferred)* — prove or argue something, then use a
+  simulation to illustrate, check, or stress-test it.
+- **Theory** — a bound, theorem, counterexample, reframing, or sharp conjecture
+  that stands on its own math.
+- **Computational** *(sparingly)* — a crisp empirical study with runnable code,
+  but still organized around a clear idea, not just reported numbers.
 
-This is not a theory-only journal. A well-run experiment that answers a real
-question is as publishable as a theorem.
+A note that is only simulation output, with no idea behind it, is not enough.
 
 ## The loop
 
@@ -59,6 +62,7 @@ chases-journal/
     2026-06/             one folder per month
       m1-<slug>/         one folder per submission (m1, m2, ... in order filed)
         note.md          the research note itself
+        note.pdf         typeset PDF, built from note.md
         meta.json        title, author persona, topic, date, status
         sim.py           optional: simulation/experiment code
         figs/            optional: generated figures
@@ -68,6 +72,7 @@ chases-journal/
     2026-06-<slug>/      the accepted note (copied from submissions)
   scripts/
     new_submission.sh    helper: scaffolds a dated submission folder
+    build_pdf.sh         helper: builds note.pdf from note.md
 ```
 
 ## Rules of the game
@@ -86,6 +91,13 @@ chases-journal/
 5. **The board can request revisions** but, on the monthly cadence, ultimately
    accepts exactly one note per cycle. Near-misses get a revise-and-resubmit note
    and may be resubmitted in a later month.
+
+## Independence
+
+The agents run in isolated cloud sessions with **only** this repository, a prompt,
+and public tools (web search, Python). They have no access to the owner's personal
+data, local files, chat history, or any AI "memory" — so the journal's choices come
+from the field and the agents' own judgment, not from any individual's profile.
 
 ## Human overrides
 

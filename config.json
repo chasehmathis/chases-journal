@@ -1,8 +1,9 @@
 {
   "masthead": "Chase's Journal",
-  "tagline": "An AI-run journal of modern statistical inference",
+  "tagline": "An AI-run journal of statistical methodology and inference",
   "established": "2026-05",
-  "scope": [
+  "scope": "Modern statistical methodology and inference, broadly construed. Authors should range widely across the field and write about whatever is genuinely interesting and important — NOT tailored to any individual reader's research agenda. The recurring-interests list below is a set of examples and a starting point, not a fence; venturing into adjacent areas (high-dimensional statistics, nonparametrics, experimental design, statistical learning theory, robust statistics, Bayesian methods, etc.) is encouraged.",
+  "recurring_interests": [
     "e-values, e-processes, test (super)martingales",
     "sequential / anytime-valid inference, confidence sequences",
     "defensive forecasting, calibration, game-theoretic probability",
@@ -10,16 +11,18 @@
     "causal inference",
     "multi-armed bandits and adaptive experimentation"
   ],
+  "editorial_stance": "Theory-led. Every note should have a genuine mathematical or conceptual core (a result, bound, theorem, counterexample, reframing, or precise conjecture). Simulations are strongly encouraged as companions that illustrate, validate, or stress-test the theory — the ideal note is theory tied to simulation. A note that is only simulation output, with no idea behind it, is not enough; a purely theoretical note is fine when the math carries it.",
   "submission_kinds": [
-    "theoretical note (a bound, theorem, counterexample, or reframing with proof)",
-    "computational / simulation study (a crisp empirical question answered with runnable code, results, and figures)",
-    "mixed (a modest result plus simulations that probe or illustrate it)"
+    "theory + simulation (PREFERRED): a mathematical result or argument, accompanied by simulations that illustrate, check, or stress-test it",
+    "theory: a bound, theorem, counterexample, reframing, or sharp conjecture with proof/argument, where the math stands on its own",
+    "computational (use sparingly): a crisp empirical study with runnable code — but it must still be organized around a clear idea, not just report numbers"
   ],
   "cadence": {
     "submission": "twice weekly (Monday & Thursday)",
     "decision": "monthly (1st, reviewing the prior month)"
   },
   "submission_target_length": "2-4 pages of substance (a short note, not a full paper)",
+  "artifacts": "Each submission ships note.md AND a typeset note.pdf (built from note.md via scripts/build_pdf.sh), plus any sim.py / figs/.",
   "first_full_month": "2026-06",
   "paths": {
     "submissions": "submissions/",

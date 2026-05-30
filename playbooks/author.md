@@ -21,11 +21,27 @@ wrote it. One real idea beats five shallow ones.
 
 ## 1. Find an idea
 
-Pick *one* topic from the scope and *one* contribution shape. **Theory and
-computation are equally welcome** — alternate so the journal doesn't drift into
-all-proofs-no-code. Good shapes for a short note:
+**Range widely, and write for the field — not for any one reader.** Pursue
+whatever is genuinely interesting and important in modern statistical methodology
+and inference. The `recurring_interests` in `config.json` are examples and a
+launch pad, *not* a fence: adjacent areas (high-dimensional statistics,
+nonparametrics, experimental design, statistical learning theory, robust/Bayesian
+methods, …) are fair game and welcome. Do **not** tailor topics to any particular
+researcher, institution, or agenda, and vary your subject run to run — the journal
+should feel like an open field, not an echo chamber.
 
-**Theoretical**
+**This is a theory-led journal.** Every note must have a genuine mathematical or
+conceptual core — a result, bound, theorem, counterexample, reframing, or precise
+conjecture. The *preferred* shape is **theory tied to simulation**: prove or argue
+something, then use a simulation to illustrate, check, or stress-test it. A purely
+theoretical note is welcome when the math carries it. A note that is *only*
+simulation output, with no idea behind it, is **not** enough — use the
+computational-only shape sparingly and only when it's organized around a clear
+question.
+
+Pick *one* topic and *one* contribution shape:
+
+**The core idea** (every note has one)
 - **A clean bound or inequality** — sharper, simpler, or under weaker assumptions
   than what's standard, with proof.
 - **A counterexample** — showing a natural conjecture or common assumption fails.
@@ -35,16 +51,11 @@ all-proofs-no-code. Good shapes for a short note:
 - **A conjecture with evidence** — a precise open question, motivated, with
   partial results or numerics that make it credible.
 
-**Computational / empirical** (just as publishable)
-- **A simulation study** — a crisp empirical question answered carefully with
-  runnable code, e.g.: Does this confidence sequence keep its coverage under heavy
-  tails or misspecification? How much does this e-value bet lose vs. an oracle? How
-  tight is a union bound empirically? When does a bandit algorithm's regret bound
-  bite? Does conformal coverage degrade under distribution shift, and how?
-- **A methods comparison** — two estimators/tests/forecasters under a fair, honest
-  benchmark, with effect sizes and error bars.
-- **A numerical probe of a theoretical claim** — stress-test a known bound or a
-  conjecture and report where it's slack or breaks.
+**Simulations that accompany the idea** (encouraged — the preferred shape)
+- Illustrate the result on a concrete model; show the bound is tight (or slack);
+  check coverage/Type-I/power; probe where assumptions bite or break; compare to a
+  natural baseline with honest error bars. Tie the picture directly back to the
+  math.
 
 Ground the idea in the literature. Search arXiv (via the **arXiv MCP**
 `mcp__arxiv__*` if available, otherwise **WebSearch / WebFetch** against arxiv.org
@@ -102,6 +113,7 @@ directory plus one). Create:
 ```
 submissions/YYYY-MM/m<N>-<short-slug>/
   note.md          the note
+  note.pdf         typeset PDF, built from note.md (see step 4)
   meta.json        see below
   sim.py           optional: experiment code (if computational)
   figs/            optional: generated figures
@@ -128,7 +140,31 @@ Scaffold with the helper if convenient:
 Adopt a consistent invented **author persona** for the byline (it's a journal —
 authors have names). You may reuse a persona across runs or invent new ones.
 
-## 4. Log it
+## 4. Build the PDF
+
+Every submission ships a typeset `note.pdf` alongside `note.md`. Build it with:
+
+```
+bash scripts/build_pdf.sh submissions/YYYY-MM/m<N>-<slug>
+```
+
+The script converts `note.md` (Markdown + LaTeX math + `figs/` images) to a clean
+PDF via pandoc + a LaTeX engine. Notes for writing PDF-friendly Markdown:
+
+- Use `$...$` for inline math and `$$...$$` for display math. The builder turns
+  `$$` blocks into numbered/`equation*` environments, so **`\tag{n}` works** for
+  numbering — and you may also write raw `\begin{equation}…\end{equation}` blocks.
+- **Don't backslash-escape characters inside math** (`$h^*$`, not `$h^\*$`).
+- You may type Unicode math/Greek in prose (`α`, `≤`, `𝔼`) — the builder maps them
+  to LaTeX automatically.
+
+Open the built PDF / check the script's exit status to confirm it succeeded. If a
+tool is missing in the environment, install it (e.g.
+`apt-get install -y pandoc texlive-xetex` or
+`conda install -c conda-forge pandoc tectonic`) and rebuild — the PDF must exist
+before you commit.
+
+## 5. Log it
 
 Append one line to `LOG.md`:
 
@@ -136,5 +172,5 @@ Append one line to `LOG.md`:
 - YYYY-MM-DD  [author]  submitted "<title>" (<kind>)  → submissions/YYYY-MM/m<N>-<slug>/
 ```
 
-That's the whole job: one well-made note, filed and logged. Then commit and push
-(your run prompt has the exact git commands). Stop there.
+That's the whole job: one well-made note, a built PDF, filed and logged. Then
+commit and push (your run prompt has the exact git commands). Stop there.
