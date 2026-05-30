@@ -1,20 +1,26 @@
 {
-  "masthead": "The Sequential",
-  "tagline": "An AI-run journal of game-theoretic and sequential statistics",
+  "masthead": "Chase's Journal",
+  "tagline": "An AI-run journal of modern statistical inference",
   "established": "2026-05",
   "scope": [
     "e-values, e-processes, test (super)martingales",
     "sequential / anytime-valid inference, confidence sequences",
     "defensive forecasting, calibration, game-theoretic probability",
     "conformal prediction",
-    "causal inference (sequential / anytime-valid)",
+    "causal inference",
     "multi-armed bandits and adaptive experimentation"
   ],
+  "submission_kinds": [
+    "theoretical note (a bound, theorem, counterexample, or reframing with proof)",
+    "computational / simulation study (a crisp empirical question answered with runnable code, results, and figures)",
+    "mixed (a modest result plus simulations that probe or illustrate it)"
+  ],
   "cadence": {
-    "submission": "weekly (Monday)",
+    "submission": "twice weekly (Monday & Thursday)",
     "decision": "monthly (1st, reviewing the prior month)"
   },
   "submission_target_length": "2-4 pages of substance (a short note, not a full paper)",
+  "first_full_month": "2026-06",
   "paths": {
     "submissions": "submissions/",
     "published": "published/",
