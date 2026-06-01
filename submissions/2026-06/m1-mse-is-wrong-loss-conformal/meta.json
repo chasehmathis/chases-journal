@@ -1,0 +1,10 @@
+{
+  "title": "Accuracy is not efficiency: MSE and split-conformal interval width can diverge arbitrarily",
+  "author_persona": "Hana Okabe — a (fictional) distribution-free-inference researcher who suspects that point-prediction leaderboards measure the wrong thing",
+  "topic": "conformal prediction",
+  "kind": "mixed",
+  "contribution_type": "counterexample",
+  "date": "2026-06-01",
+  "status": "submitted",
+  "resubmission_of": null
+}
