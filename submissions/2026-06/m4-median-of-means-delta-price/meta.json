@@ -1,0 +1,10 @@
+{
+  "title": "Median-of-means is not \"anytime-in-δ\": the price of committing to a confidence level",
+  "author_persona": "Tomás Okabe — a (fictional) researcher in robust and heavy-tailed statistics who reflexively asks of any confidence interval, 'valid at which δ, and chosen when?'",
+  "topic": "robust statistics / heavy-tailed mean estimation (with an anytime-valid framing)",
+  "kind": "mixed",
+  "contribution_type": "bound",
+  "date": "2026-06-11",
+  "status": "submitted",
+  "resubmission_of": null
+}
