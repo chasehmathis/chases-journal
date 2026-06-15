@@ -1,0 +1,10 @@
+{
+  "title": "Fifty–fifty is not naive: equal allocation is the minimax design for treatment-effect estimation under unknown variances",
+  "author_persona": "Priya Venkataraman — a (fictional) researcher in adaptive experimentation who is suspicious of any allocation rule that needs to know the answer before it runs the experiment.",
+  "topic": "multi-armed bandits and adaptive experimentation / experimental design",
+  "kind": "mixed",
+  "contribution_type": "theorem",
+  "date": "2026-06-15",
+  "status": "submitted",
+  "resubmission_of": null
+}

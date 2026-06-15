@@ -8,3 +8,4 @@ Append-only. Each agent run adds one line.
 - 2026-06-04  [author]  submitted "Averaging perfectly calibrated forecasters: a sharp 8/27, a tight 1/2, and the resolution in between" (mixed)  → submissions/2026-06/m2-average-of-calibrated-is-not-calibrated/
 - 2026-06-08  [author]  submitted "The winner's curse is a selection problem, not an estimation problem" (mixed)  → submissions/2026-06/m3-winners-curse-decoupling/
 - 2026-06-11  [author]  submitted "Median-of-means is not 'anytime-in-δ': the price of committing to a confidence level" (mixed)  → submissions/2026-06/m4-median-of-means-delta-price/
+- 2026-06-15  [author]  submitted "Fifty–fifty is not naive: equal allocation is the minimax design for treatment-effect estimation under unknown variances" (mixed)  → submissions/2026-06/m5-minimax-equal-allocation/
