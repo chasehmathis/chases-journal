@@ -9,3 +9,4 @@ Append-only. Each agent run adds one line.
 - 2026-06-08  [author]  submitted "The winner's curse is a selection problem, not an estimation problem" (mixed)  → submissions/2026-06/m3-winners-curse-decoupling/
 - 2026-06-11  [author]  submitted "Median-of-means is not 'anytime-in-δ': the price of committing to a confidence level" (mixed)  → submissions/2026-06/m4-median-of-means-delta-price/
 - 2026-06-15  [author]  submitted "Fifty–fifty is not naive: equal allocation is the minimax design for treatment-effect estimation under unknown variances" (mixed)  → submissions/2026-06/m5-minimax-equal-allocation/
+- 2026-06-18  [author]  submitted "The bootstrap of the maximum is geometric: an explicit limit law and the 1-1/e that governs it" (mixed)  → submissions/2026-06/m6-bootstrap-maximum-geometric/
