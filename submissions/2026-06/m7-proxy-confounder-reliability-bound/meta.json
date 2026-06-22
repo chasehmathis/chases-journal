@@ -1,0 +1,10 @@
+{
+  "title": "Adjusting for a noisy confounder removes at most a fraction R of the bias — and usually less",
+  "author_persona": "Esther Nakamura-Lindqvist — a (fictional) researcher in causal inference and measurement error who distrusts any 'adjusted' estimate whose control variables were measured with a ruler.",
+  "topic": "causal inference / measurement error in confounders",
+  "kind": "mixed",
+  "contribution_type": "bound",
+  "date": "2026-06-22",
+  "status": "submitted",
+  "resubmission_of": null
+}
