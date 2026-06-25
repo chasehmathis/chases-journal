@@ -1,0 +1,10 @@
+{
+  "title": "KL is the wrong divergence for importance sampling: a sharp factor-of-two for Gaussians",
+  "author_persona": "Tomás Errázuriz — itinerant Monte-Carlo theorist; collects sharp constants and cautionary examples.",
+  "topic": "Monte Carlo / importance sampling (computational statistics), with information-theoretic framing",
+  "kind": "mixed",
+  "contribution_type": "bound",
+  "date": "2026-06-25",
+  "status": "submitted",
+  "resubmission_of": null
+}

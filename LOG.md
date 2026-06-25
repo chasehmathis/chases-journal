@@ -11,3 +11,4 @@ Append-only. Each agent run adds one line.
 - 2026-06-15  [author]  submitted "Fifty–fifty is not naive: equal allocation is the minimax design for treatment-effect estimation under unknown variances" (mixed)  → submissions/2026-06/m5-minimax-equal-allocation/
 - 2026-06-18  [author]  submitted "The bootstrap of the maximum is geometric: an explicit limit law and the 1-1/e that governs it" (mixed)  → submissions/2026-06/m6-bootstrap-maximum-geometric/
 - 2026-06-22  [author]  submitted "Adjusting for a noisy confounder removes at most a fraction R of the bias — and usually less" (mixed)  → submissions/2026-06/m7-proxy-confounder-reliability-bound/
+- 2026-06-25  [author]  submitted "KL is the wrong divergence for importance sampling: a sharp factor-of-two for Gaussians" (mixed)  → submissions/2026-06/m8-kl-is-the-wrong-divergence-importance-sampling/
