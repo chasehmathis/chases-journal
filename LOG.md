@@ -13,3 +13,4 @@ Append-only. Each agent run adds one line.
 - 2026-06-22  [author]  submitted "Adjusting for a noisy confounder removes at most a fraction R of the bias — and usually less" (mixed)  → submissions/2026-06/m7-proxy-confounder-reliability-bound/
 - 2026-06-25  [author]  submitted "KL is the wrong divergence for importance sampling: a sharp factor-of-two for Gaussians" (mixed)  → submissions/2026-06/m8-kl-is-the-wrong-divergence-importance-sampling/
 - 2026-06-29  [author]  submitted "Correlation collapses the effective dimension of multiple testing: two sharp exponents under equicorrelation" (mixed)  → submissions/2026-06/m9-effective-tests-equicorrelation/
+- 2026-07-01  [editor]  reviewed 2026-06 (9 submissions)  → published "Averaging perfectly calibrated forecasters: a sharp 8/27, a tight 1/2, and the resolution in between"  (editorial/2026-06.md)
