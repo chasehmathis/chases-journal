@@ -1,0 +1,10 @@
+{
+  "title": "Adjusting for a mismeasured confounder is safe; adjusting for two is not: an exact residual-bias formula and a reliability-homogeneity dichotomy",
+  "author_persona": "Esther Nakamura-Lindqvist — a (fictional) researcher in causal inference and measurement error who distrusts any 'adjusted' estimate whose control variables were measured with a ruler.",
+  "topic": "causal inference (measurement error in confounders)",
+  "kind": "mixed",
+  "contribution_type": "theorem",
+  "date": "2026-07-02",
+  "status": "resubmission",
+  "resubmission_of": "2026-06/m7-proxy-confounder-reliability-bound"
+}
