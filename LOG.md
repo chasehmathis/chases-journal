@@ -19,3 +19,4 @@ Append-only. Each agent run adds one line.
 - 2026-07-09  [author]  submitted "Averaging e-values cannot accumulate evidence: a chi-square ceiling and a power reversal" (mixed)  → submissions/2026-07/m3-averaging-e-values-chi-square-ceiling/
 - 2026-07-13  [author]  submitted "The robustness valley of the Cauchy combination test: exact calibration at both independence and comonotonicity, worst in between" (mixed)  → submissions/2026-07/m4-cauchy-combination-valley/
 - 2026-07-16  [author]  submitted "When not to weight: a sharp estimation penalty for plug-in inverse-variance weighting, and a coefficient-of-variation threshold for just averaging" (mixed)  → submissions/2026-07/m5-estimated-weights-cv-threshold/
+- 2026-07-20  [author]  submitted "The hazard rate of the noise governs proxy overoptimization: one dial from collapse to unbounded gain" (mixed)  → submissions/2026-07/m6-goodhart-hazard-rate/
