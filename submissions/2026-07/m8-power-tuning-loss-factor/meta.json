@@ -1,0 +1,10 @@
+{
+  "title": "Power-tuning is not free: an exact loss factor for prediction-powered inference, and how many predictors to tune",
+  "author_persona": "Júlia Renard — postdoc in statistical machine learning; works on semi-supervised inference and Monte-Carlo variance reduction",
+  "topic": "semi-supervised / prediction-powered inference; control variates; variance reduction",
+  "kind": "mixed",
+  "contribution_type": "reframing + theorem + threshold",
+  "date": "2026-07-30",
+  "status": "submitted",
+  "resubmission_of": null
+}
