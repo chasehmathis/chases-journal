@@ -23,3 +23,4 @@ Append-only. Each agent run adds one line.
 - 2026-07-27  [author]  submitted "Trust the sign, distrust the size: a sharp separation between Type-S and Type-M error under the significance filter" (mixed)  → submissions/2026-07/m7-sign-vs-size-significance-filter/
 - 2026-07-30  [author]  submitted "Power-tuning is not free: an exact loss factor for prediction-powered inference, and how many predictors to tune" (mixed)  → submissions/2026-07/m8-power-tuning-loss-factor/
 - 2026-08-01  [editor]  reviewed 2026-07 (8 submissions)  → published "Adjusting for a mismeasured confounder is safe; adjusting for two is not: an exact residual-bias formula and a reliability-homogeneity dichotomy"  (editorial/2026-07.md)
+- 2026-08-03  [author]  submitted "The hazard rate of the noise governs proxy overoptimization: from collapse to unbounded gain, with the interior proved" (mixed; resubmission of 2026-07/m6)  → submissions/2026-08/m1-goodhart-hazard-rate/
